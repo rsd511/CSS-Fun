@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Floating Quote Cards</title>
+
+    <!-- CSS -->
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body h1 {
+            text-align: center;
+            border-bottom: 2px solid rgb(8, 124, 163);
+            padding-bottom: 20px;
+            margin-bottom: 0px;
+        }
+
+        #main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background-color: lightblue;
+        }
+
+        .card {
+            width: 20%;
+            margin: 40px;
+            padding: 20px;
+            border: 1px solid lightgray;
+            box-shadow: -10px 10px 10px rgb(8, 124, 163);
+            border-radius: 5px;
+            background-color: white;
+
+            animation-name: floating;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes floating {
+            from { transform: translate(0,  0px); }
+            65%  { transform: translate(0, 7px); }
+            to   { transform: translate(0, -0px); }    
+        }
+
+        .card:hover {
+            box-shadow: -5px 5px 5px rgb(8, 124, 163);
+            animation-name: none;
+            border: 2px solid rgb(8, 124, 163);
+        }
+
+        .card p {
+            font-style: oblique;
+        }
+
+        .card h4 {
+            text-align: right;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Floating Quote Cards</h1>
+    <div id="main" >
+        <div class = "card" >
+            <p>
+                Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.
+            </p>
+            <h4>- Albert Einstein</h4>
+        </div>
+        <div class = "card" >
+            <p>
+                You only live once, but if you do it right, once is enough.
+            </p>
+            <h4>- Mae West</h4>
+        </div>
+        <div class = "card" >
+            <p>
+                In three words I can sum up everything I've learned about life: it goes on.
+            </p>
+            <h4>- Robert Frost</h4>
+        </div>
+        <div class = "card" >
+            <p>
+                To live is the rarest thing in the world. Most people exist, that is all.
+            </p>
+            <h4>- Oscar Wilde</h4>
+        </div>
+        <div class = "card" >
+            <p>
+                Without music, life would be a mistake.
+            </p>
+            <h4>- Friedrich Nietzsche</h4>
+        </div>
+        <div class = "card" >
+            <p>
+                To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment..
+            </p>
+            <h4>- Ralph Waldo Emerson</h4>
+        </div>
+        <div class = "card" >
+            <p>
+                It is better to be hated for what you are than to be loved for what you are not.
+            </p>
+            <h4>- Andre Gide</h4>
+        </div>
+        <div class = "card" >
+            <p>
+                I may not have gone where I intended to go, but I think I have ended up where I needed to be.
+            </p>
+            <h4>- Douglas Adams</h4>
+        </div>
+        <div class = "card" >
+            <p>
+                I am enough of an artist to draw freely upon my imagination. Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world.
+            </p>
+            <h4>- Albert Einstein</h4>
+        </div>
+        <div class = "card" >
+            <p>
+                A reader lives a thousand lives before he dies, said Jojen. The man who never reads lives only one.
+            </p>
+            <h4>- George R.R. Martin</h4>
+        </div>
+        <div class = "card" >
+            <p>
+                Life isn't about finding yourself. Life is about creating yourself.
+            </p>
+            <h4>- George Bernard Shaw</h4>
+        </div>
+    </div>
+</body>
+</html>
